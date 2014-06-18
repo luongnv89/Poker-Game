@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.constant name="'" org.eventb.core.comment="The set id of cards." org.eventb.core.identifier="SetID"/>
+<org.eventb.core.constant name="cst1" org.eventb.core.comment="The set value of cards." org.eventb.core.identifier="Value"/>
+<org.eventb.core.constant name="cst2" org.eventb.core.comment="The set suit of cards." org.eventb.core.identifier="Suit"/>
+<org.eventb.core.constant name="cst4" org.eventb.core.comment="Get the suit of a card." org.eventb.core.identifier="getSuit"/>
+<org.eventb.core.constant name="cst5" org.eventb.core.comment="Get the value of a card." org.eventb.core.identifier="getValue"/>
+<org.eventb.core.axiom name="-" org.eventb.core.comment="Eack pack of cards has 52 cards, &#10;so the id of card is from 1 to 52" org.eventb.core.label="SetID_D" org.eventb.core.predicate="SetID = 1‥52"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.comment="The value of cards is from 1 to 13. &#10;They represent the card from Ace, two, three....10, Jack, Queen, King" org.eventb.core.label="Value_D" org.eventb.core.predicate="Value = 1‥13"/>
+<org.eventb.core.axiom name="axm2" org.eventb.core.comment="The suite of cards is from 1 to 4:&#10;1-Heart,&#10;2-Diamond&#10;3-Club&#10;4-Spade" org.eventb.core.label="Suit_D" org.eventb.core.predicate="Suit = 1‥4"/>
+<org.eventb.core.axiom name="axm3" org.eventb.core.comment="Get the suit of a card." org.eventb.core.label="getSuit_D" org.eventb.core.predicate="getSuit ∈ SetID ↣Suit "/>
+<org.eventb.core.axiom name="axm4" org.eventb.core.comment="If a card has id from 1 to 13, the card is a heart,&#10;then the suite of the card is 1." org.eventb.core.label="getSuit_F1" org.eventb.core.predicate="∀x·x∈SetID∧x≥1∧x≤13 ⇒ getSuit(x)= 1"/>
+<org.eventb.core.axiom name="axm5" org.eventb.core.comment="If a card has id from 14 to 26, the card is a diamond,&#10;then the suite of the card is 2." org.eventb.core.label="getSuit_F2" org.eventb.core.predicate="∀x·x∈SetID∧x≥14∧x≤26 ⇒ getSuit(x)= 2"/>
+<org.eventb.core.axiom name="axm6" org.eventb.core.comment="If a card has id is from 27 to 39, the card is a club,&#10;then the suite of the card is 3." org.eventb.core.label="getSuit_F3" org.eventb.core.predicate="∀x·x∈SetID∧x≥27∧x≤39 ⇒ getSuit(x)= 3"/>
+<org.eventb.core.axiom name="axm7" org.eventb.core.comment="If a card has id is from 40 to 52, the card is a spade,&#10;then the suite of the card is 4." org.eventb.core.label="getSuit_F4" org.eventb.core.predicate="∀x·x∈SetID∧x≥40∧x≤52 ⇒ getSuit(x)= 4"/>
+<org.eventb.core.axiom name="axm8" org.eventb.core.comment="Get the value of a card." org.eventb.core.label="getValue_D" org.eventb.core.predicate="getValue ∈ SetID ↣ Value"/>
+<org.eventb.core.axiom name="axm9" org.eventb.core.comment="If the id of card can not divided by 13, &#10;then the value of the card equal to id mode 13." org.eventb.core.label="getValue_F1" org.eventb.core.predicate="∀x·x∈SetID ∧ x mod 13 ≠0 ⇒ getValue(x) = x mod 13"/>
+<org.eventb.core.axiom name="axm10" org.eventb.core.comment="If the id of card can divided by 13, &#10;then the value of card is 13 (the card is a KING)." org.eventb.core.label="getValue_F2" org.eventb.core.predicate="∀x·x∈SetID ∧ x mod 13 = 0 ⇒ getValue(x) = 13"/>
+</org.eventb.core.contextFile>

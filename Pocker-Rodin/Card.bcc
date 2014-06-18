@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="SetID_D" org.eventb.core.predicate="SetID=1 ‥ 52" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="Value_D" org.eventb.core.predicate="Value=1 ‥ 13" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="Suit_D" org.eventb.core.predicate="Suit=1 ‥ 4" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm2" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="getSuit_D" org.eventb.core.predicate="getSuit∈SetID ↣ Suit" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm3" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="getSuit_F1" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥1∧x≤13⇒getSuit(x)=1" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm4" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="," org.eventb.core.label="getSuit_F2" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥14∧x≤26⇒getSuit(x)=2" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm5" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="-" org.eventb.core.label="getSuit_F3" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥27∧x≤39⇒getSuit(x)=3" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm6" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="." org.eventb.core.label="getSuit_F4" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥40∧x≤52⇒getSuit(x)=4" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm7" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="/" org.eventb.core.label="getValue_D" org.eventb.core.predicate="getValue∈SetID ↣ Value" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm8" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="0" org.eventb.core.label="getValue_F1" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x mod 13≠0⇒getValue(x)=x mod 13" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm9" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="1" org.eventb.core.label="getValue_F2" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x mod 13=0⇒getValue(x)=13" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm10" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="SetID" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.constant#'" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.scConstant name="Suit" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.constant#cst2" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.scConstant name="Value" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.constant#cst1" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.scConstant name="getSuit" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.constant#cst4" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.scConstant name="getValue" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.constant#cst5" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.scContextFile>

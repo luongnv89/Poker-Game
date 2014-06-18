@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="SetID" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="Suit" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="Value" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="getSuit" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="getValue" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poPredicate name="getValuf" org.eventb.core.predicate="SetID=1 ‥ 52" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="getValug" org.eventb.core.predicate="Value=1 ‥ 13" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm1"/>
+<org.eventb.core.poPredicate name="getValuh" org.eventb.core.predicate="Suit=1 ‥ 4" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm2"/>
+<org.eventb.core.poPredicate name="getValui" org.eventb.core.predicate="getSuit∈SetID ↣ Suit" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm3"/>
+<org.eventb.core.poPredicate name="getValuj" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥1∧x≤13⇒getSuit(x)=1" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm4"/>
+<org.eventb.core.poPredicate name="getValuk" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥14∧x≤26⇒getSuit(x)=2" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm5"/>
+<org.eventb.core.poPredicate name="getValul" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥27∧x≤39⇒getSuit(x)=3" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm6"/>
+<org.eventb.core.poPredicate name="getValum" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x≥40∧x≤52⇒getSuit(x)=4" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm7"/>
+<org.eventb.core.poPredicate name="getValun" org.eventb.core.predicate="getValue∈SetID ↣ Value" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm8"/>
+<org.eventb.core.poPredicate name="getValuo" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x mod 13≠0⇒getValue(x)=x mod 13" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm9"/>
+<org.eventb.core.poPredicate name="getValup" org.eventb.core.predicate="∀x⦂ℤ·x∈SetID∧x mod 13=0⇒getValue(x)=13" org.eventb.core.source="/Pocker/Card.buc|org.eventb.core.contextFile#Card|org.eventb.core.axiom#axm10"/>
+<org.eventb.core.poIdentifier name="compareSetCard" org.eventb.core.type="ℙ(ℙ(ℤ)×ℙ(ℤ)×ℤ)"/>
+<org.eventb.core.poIdentifier name="getMax" org.eventb.core.type="ℙ(ℙ(ℤ)×ℤ)"/>
+<org.eventb.core.poIdentifier name="getMax_Card" org.eventb.core.type="ℙ(ℙ(ℤ)×ℙ(ℤ))"/>
+<org.eventb.core.poIdentifier name="getPair" org.eventb.core.type="ℙ(ℙ(ℤ)×ℙ(ℤ))"/>
+<org.eventb.core.poIdentifier name="getThree" org.eventb.core.type="ℙ(ℙ(ℤ)×ℙ(ℤ))"/>
+<org.eventb.core.poIdentifier name="isA" org.eventb.core.type="ℙ(ℙ(ℤ)×BOOL)"/>
+<org.eventb.core.poIdentifier name="isEmpty" org.eventb.core.type="ℙ(ℙ(ℤ)×BOOL)"/>
+<org.eventb.core.poIdentifier name="isK" org.eventb.core.type="ℙ(ℙ(ℤ)×BOOL)"/>
+<org.eventb.core.poIdentifier name="isPair" org.eventb.core.type="ℙ(ℙ(ℤ)×BOOL)"/>
+<org.eventb.core.poIdentifier name="isThree" org.eventb.core.type="ℙ(ℙ(ℤ)×BOOL)"/>
+<org.eventb.core.poIdentifier name="isUnique" org.eventb.core.type="ℙ(ℙ(ℤ)×BOOL)"/>
+<org.eventb.core.poIdentifier name="result" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="isEmpty_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarf"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·(a∈ℙ(SetID)⇒finite(a))∧(a∈ℙ(SetID)∧card(a)=0⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#a"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#a"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarf"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="isUnique_F1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarh"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·(a∈ℙ(SetID)⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL)∧(a∈ℙ(SetID)∧isEmpty(a)=TRUE⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm14"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm14"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarh"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="isUnique_F2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCari"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ,y⦂ℤ·a∈ℙ(SetID)∧x∈a∧y∈a∧x=y⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#^"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#^"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCari"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="isA_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCark"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE∧x∈a⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ)))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧getValue(x)=1⇒a∈dom(isA)∧isA∈ℙ(ℤ) ⇸ BOOL)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#G"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#G"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCark"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="isK_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE∧x∈a⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ)))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧getValue(x)=13⇒a∈dom(isK)∧isK∈ℙ(ℤ) ⇸ BOOL)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#I"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#I"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarm"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="isPair_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCaro"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ,y⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒finite(a)∧(card(a)&gt;1∧x∈a∧y∈a∧x≠y⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ∧y∈dom(getValue))))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;1∧x∈a∧y∈a∧x≠y∧getValue(x)=getValue(y)⇒a∈dom(isPair)∧isPair∈ℙ(ℤ) ⇸ BOOL)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#N"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#N"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCaro"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="isThree_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ,y⦂ℤ,z⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒finite(a)∧(card(a)&gt;2∧x∈a∧y∈a∧z∈a⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ∧y∈dom(getValue)∧(getValue(x)=getValue(y)⇒z∈dom(getValue)))))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;2∧x∈a∧y∈a∧z∈a∧getValue(x)=getValue(y)∧getValue(y)=getValue(z)⇒a∈dom(isThree)∧isThree∈ℙ(ℤ) ⇸ BOOL)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#P"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#P"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarq"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="getPair_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCars"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ,y⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒finite(a)∧(card(a)&gt;1∧x∈a∧y∈a∧x≠y⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ∧y∈dom(getValue))))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;1∧x∈a∧y∈a∧x≠y∧getValue(x)=getValue(y)⇒a∈dom(getPair)∧getPair∈ℙ(ℤ) ⇸ ℙ(ℤ))" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#U"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#U"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCars"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="getThree_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCaru"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ,y⦂ℤ,z⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒finite(a)∧(card(a)&gt;2∧x∈a∧y∈a∧z∈a∧x≠y∧y≠z∧z≠x⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ∧y∈dom(getValue)∧(getValue(x)=getValue(y)⇒z∈dom(getValue)))))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;2∧x∈a∧y∈a∧z∈a∧x≠y∧y≠z∧z≠x∧getValue(x)=getValue(y)∧getValue(y)=getValue(z)⇒a∈dom(getThree)∧getThree∈ℙ(ℤ) ⇸ ℙ(ℤ))" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#V"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#V"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCaru"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="getMax_Func/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarw"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ,y⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE∧x∈a∧y∈a⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ∧y∈dom(getValue))))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧y∈a∧getValue(x)≥getValue(y)⇒a∈dom(getMax)∧getMax∈ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm2"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarw"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="getMax_Card_F/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCary"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),x⦂ℤ,y⦂ℤ·(a∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE∧x∈a∧y∈a⇒x∈dom(getValue)∧getValue∈ℤ ⇸ ℤ∧y∈dom(getValue))))∧(a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧y∈a∧getValue(x)≥getValue(y)⇒a∈dom(getMax_Card)∧getMax_Card∈ℙ(ℤ) ⇸ ℙ(ℤ))" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm4"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCary"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F00/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar{"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒finite(a)∧finite(b))∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧card(a)≠card(b)⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm7"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar{"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F01/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL)∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=FALSE⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm16"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm16"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar\|"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F02/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒b∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL)∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(b)=FALSE⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm15"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm15"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar}"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F0/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=TRUE⇒b∈dom(isEmpty)))∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧isEmpty(a)=TRUE∧isEmpty(b)=TRUE⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm8"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar~"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F10/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE⇒b∈dom(isUnique)∧(isUnique(b)=TRUE⇒b∈dom(isEmpty)∧(isEmpty(b)=FALSE⇒finite(a)∧finite(b)∧(card(a)=card(b)⇒a∈dom(isA)∧isA∈ℙ(ℤ) ⇸ BOOL∧(isA(a)=TRUE⇒b∈dom(isA))))))))∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧isA(a)=TRUE∧isA(b)=FALSE⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm9"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F11/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE⇒b∈dom(isUnique)∧(isUnique(b)=TRUE⇒b∈dom(isEmpty)∧(isEmpty(b)=FALSE⇒finite(a)∧finite(b)∧(card(a)=card(b)⇒a∈dom(getMax)∧getMax∈ℙ(ℤ) ⇸ ℤ∧b∈dom(getMax)∧(getMax(a)&gt;getMax(b)⇒a∈dom(isA)∧isA∈ℙ(ℤ) ⇸ BOOL∧b∈dom(isA))))))))∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧getMax(a)&gt;getMax(b)∧isA(a)=isA(b)⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm10"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm10"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F20/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE⇒b∈dom(isUnique)∧(isUnique(b)=TRUE⇒b∈dom(isEmpty)∧(isEmpty(b)=FALSE⇒finite(a)∧finite(b)∧(card(a)=card(b)⇒a∈dom(isA)∧isA∈ℙ(ℤ) ⇸ BOOL∧(isA(a)=FALSE⇒b∈dom(isA))))))))∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧isA(a)=FALSE∧isA(b)=TRUE⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm11"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm11"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_F21/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE⇒b∈dom(isUnique)∧(isUnique(b)=TRUE⇒b∈dom(isEmpty)∧(isEmpty(b)=FALSE⇒finite(a)∧finite(b)∧(card(a)=card(b)⇒a∈dom(getMax)∧getMax∈ℙ(ℤ) ⇸ ℤ∧b∈dom(getMax)∧(getMax(a)&lt;getMax(b)⇒a∈dom(isA)∧isA∈ℙ(ℤ) ⇸ BOOL∧b∈dom(isA))))))))∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧getMax(a)&lt;getMax(b)∧isA(a)=isA(b)⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm12"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm12"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas*"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="compareSetCard_FR/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ),c⦂ℙ(ℤ),d⦂ℙ(ℤ)·(a∈ℙ(SetID)∧b∈ℙ(SetID)∧c∈ℙ(SetID)∧d∈ℙ(SetID)⇒a∈dom(isUnique)∧isUnique∈ℙ(ℤ) ⇸ BOOL∧(isUnique(a)=TRUE⇒a∈dom(isEmpty)∧isEmpty∈ℙ(ℤ) ⇸ BOOL∧(isEmpty(a)=FALSE⇒b∈dom(isUnique)∧(isUnique(b)=TRUE⇒b∈dom(isEmpty)∧(isEmpty(b)=FALSE⇒finite(a)∧finite(b)∧(card(a)=card(b)⇒a∈dom(getMax)∧getMax∈ℙ(ℤ) ⇸ ℤ∧b∈dom(getMax)∧(getMax(a)=getMax(b)⇒a∈dom(isA)∧isA∈ℙ(ℤ) ⇸ BOOL∧b∈dom(isA)∧(isA(a)=isA(b)⇒a∈dom(getMax_Card)∧getMax_Card∈ℙ(ℤ) ⇸ ℙ(ℤ)∧(c=a ∖ getMax_Card(a)⇒b∈dom(getMax_Card))))))))))∧(a∈ℙ(SetID)∧b∈ℙ(SetID)∧c∈ℙ(SetID)∧d∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧getMax(a)=getMax(b)∧isA(a)=isA(b)∧c=a ∖ getMax_Card(a)∧d=b ∖ getMax_Card(b)⇒a ↦ b∈dom(compareSetCard)∧compareSetCard∈ℙ(ℤ) × ℙ(ℤ) ⇸ ℤ∧c ↦ d∈dom(compareSetCard))" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm13"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm13"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas+"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYPCarf" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="result={−1,0,1,2}" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm5"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="isEmpty∈ℙ(SetID) → BOOL" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#b"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCarh" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarf" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·a∈ℙ(SetID)∧card(a)=0⇒isEmpty(a)=TRUE" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#a"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="isUnique∈ℙ(SetID) → BOOL" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#\\"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCari" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarh" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·a∈ℙ(SetID)∧isEmpty(a)=TRUE⇒isUnique(a)=TRUE" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm14"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCark" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCari" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ,y⦂ℤ·a∈ℙ(SetID)∧x∈a∧y∈a∧x=y⇒isUnique(a)=FALSE" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#^"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="isA∈ℙ(SetID) → BOOL" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#F"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCarm" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCark" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧getValue(x)=1⇒isA(a)=TRUE" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="isK∈ℙ(SetID) → BOOL" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#H"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCaro" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarm" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧getValue(x)=13⇒isK(a)=TRUE" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#I"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="isPair∈ℙ(SetID) → BOOL" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#M"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCarq" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCaro" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ,y⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;1∧x∈a∧y∈a∧x≠y∧getValue(x)=getValue(y)⇒isPair(a)=TRUE" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#N"/>
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="isThree∈ℙ(SetID) → BOOL" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#O"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCars" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarq" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ,y⦂ℤ,z⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;2∧x∈a∧y∈a∧z∈a∧getValue(x)=getValue(y)∧getValue(y)=getValue(z)⇒isThree(a)=TRUE" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#P"/>
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="getPair∈ℙ(SetID) → ℙ(SetID)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#R"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCaru" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCars" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ,y⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;1∧x∈a∧y∈a∧x≠y∧getValue(x)=getValue(y)⇒getPair(a)={x,y}" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#U"/>
+<org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="getThree∈ℙ(SetID) → ℙ(SetID)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCarw" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCaru" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ,y⦂ℤ,z⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧card(a)&gt;2∧x∈a∧y∈a∧z∈a∧x≠y∧y≠z∧z≠x∧getValue(x)=getValue(y)∧getValue(y)=getValue(z)⇒getThree(a)={x,y,z}" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#V"/>
+<org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="getMax∈ℙ(SetID) → Value" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCary" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCarw" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ·∀y⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧y∈a∧getValue(x)≥getValue(y)⇒getMax(a)=getValue(x)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm2"/>
+<org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="getMax_Card∈ℙ(SetID) → ℙ(SetID)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCar{" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCary" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD21" org.eventb.core.predicate="∀a⦂ℙ(ℤ)·∃x⦂ℤ·∀y⦂ℤ·a∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧x∈a∧y∈a∧getValue(x)≥getValue(y)⇒getMax_Card(a)={x}" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm4"/>
+<org.eventb.core.poPredicate name="PRD22" org.eventb.core.predicate="compareSetCard∈ℙ(SetID) × ℙ(SetID) ↣ result" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm6"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCar|" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar{" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD23" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧card(a)≠card(b)⇒compareSetCard(a ↦ b)=−1" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm7"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCar}" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar\|" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD24" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=FALSE⇒compareSetCard(a ↦ b)=−1" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm16"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCar~" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar}" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD25" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(b)=FALSE⇒compareSetCard(a ↦ b)=−1" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm15"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCas'" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCar~" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD26" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧isEmpty(a)=TRUE∧isEmpty(b)=TRUE⇒compareSetCard(a ↦ b)=0" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm8"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCas(" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD27" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧isA(a)=TRUE∧isA(b)=FALSE⇒compareSetCard(a ↦ b)=1" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm9"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCas)" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas(" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD28" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧getMax(a)&gt;getMax(b)∧isA(a)=isA(b)⇒compareSetCard(a ↦ b)=1" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm10"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCas*" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD29" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧isA(a)=FALSE∧isA(b)=TRUE⇒compareSetCard(a ↦ b)=2" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm11"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPCas+" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas*" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD30" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧getMax(a)&lt;getMax(b)∧isA(a)=isA(b)⇒compareSetCard(a ↦ b)=2" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm12"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Pocker/Poker.bpo|org.eventb.core.poFile#Poker|org.eventb.core.poPredicateSet#HYPCas+" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD31" org.eventb.core.predicate="∀a⦂ℙ(ℤ),b⦂ℙ(ℤ)·∃c⦂ℙ(ℤ),d⦂ℙ(ℤ)·a∈ℙ(SetID)∧b∈ℙ(SetID)∧c∈ℙ(SetID)∧d∈ℙ(SetID)∧isUnique(a)=TRUE∧isEmpty(a)=FALSE∧isUnique(b)=TRUE∧isEmpty(b)=FALSE∧card(a)=card(b)∧getMax(a)=getMax(b)∧isA(a)=isA(b)∧c=a ∖ getMax_Card(a)∧d=b ∖ getMax_Card(b)⇒compareSetCard(a ↦ b)=compareSetCard(c ↦ d)" org.eventb.core.source="/Pocker/Poker.buc|org.eventb.core.contextFile#Poker|org.eventb.core.axiom#axm13"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
