@@ -1,4 +1,4 @@
-#Poker Hands#
+# Poker Hands
 
 My project in course: Mathematical Foundations
 
@@ -17,9 +17,3 @@ Specify and implement a function that compares two poker hands of 5 cards each, 
 - Implementation in the language Java (./Poker-Java)
 - A simple installation process (make, eg) for executing tests on your code (PokerGame.jar)
 - Full documentation linking code to specifications (./RodinSpecifications)
-
--------------------------------
-Nguyen Van Luong - luongnv89@gmail.com - [http://luongnv.info](http://luongnv.info)
-
-
-
